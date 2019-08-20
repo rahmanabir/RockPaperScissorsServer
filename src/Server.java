@@ -79,16 +79,18 @@ public class Server{
      }
  }
  
+ // Generates random move between 1 and 3
  public int randomGenerator() {
 	 Random rand = new Random();
 	 int randomNumber =rand.nextInt((3 - 1) + 1) + 1;
 	return randomNumber;
  }
  
+ // Rock Paper Scissors game logic [very stupid but works]
  public void RockPaperScissor(String x) {
 	 
-	 int computer =  randomGenerator();
-	 int userMove = Integer.parseInt(x);
+	 int computer =  randomGenerator(); //computer move
+	 int userMove = Integer.parseInt(x); //user move
 	 if(computer == userMove) {
 		 try {
 			out.writeUTF(player + " tied with Computer");
