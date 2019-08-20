@@ -11,9 +11,6 @@ public class Server{
  private DataInputStream in       =  null;
  private DataOutputStream out     = null;
  public String player ="";
- public int rock = 1; 
- public int paper = 2;
- public int scissor = 3;
  public String rules = "1 - ROCK, 2 - PAPER, 3 - SCISSORS, type EXIT to quit anytime!";
  
  // constructor takes TCP port number
